@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+	#wholetable {
+		margin-left: 37%;
+		size: 400%;
+	}
+	
+	body {
+		object-position: center;
+	}
+	input {
+		text-align: center;
+		padding-left: 20px;
+	}
+	h1 {
+		font-family: 
+	}
+	#mariotitle {
+		margin-left: 37%;
+		padding-bottom: 30px;
+	}
+	#calimg {
+		background-image: "mariogiphy.gif";
+	}
+
+</style>
+<header>
+	<div id="mariotitle">
+		<img src="mariotitle.png" width="30%">
+	</div>
+</header>
+
+<body>
+	<body background="mariobkg.jpg">
+
+
+
+<div id="wholetable">
+<FORM NAME="Calc">
+<TABLE BORDER=4 size="120em" height="400" width="230">
+
+<TR>
+	<TD>
+		<INPUT TYPE="text" Name="Input" height="55px" width="65px";>
+	</TD>
+</TR>
+
+<TR>
+<TD>
+	<div id="calimg">
+		<img src="mariogiphy.gif" height="100%"; width="100%"> 
+	</div>
+</TD>
+</TR>
+
+<TR>
+<TD>
+	<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'"> 
+	<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+	<INPUT TYPE="button" NAME="three"   VALUE="  3 " OnCLick="Calc.Input.value += '3'">
+	<Input class="numbers" type="button" name="on | off" value="on | off" onclick="Calc.Input.value=''">
+</TD>
+</TR>
+
+<TR>
+<TD>
+	<INPUT TYPE="button" NAME="four"   VALUE=" 4 " OnCLick="Calc.Input.value += '4'">
+	<INPUT TYPE="button" NAME="five"   VALUE=" 5 " OnCLick="Calc.Input.value += '5'">
+	<INPUT TYPE="button" NAME="six"   VALUE=" 6 " OnCLick="Calc.Input.value += '6'">
+	<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+</TD>
+</TR>
+
+<TR>
+<TD>
+ 	<INPUT TYPE="button" NAME="seven"  VALUE=" 7 " OnClick="Calc.Input.value += ' 7 '">
+ 	<INPUT TYPE="button" NAME="eight"  VALUE=" 8 " OnClick="Calc.Input.value += ' 8 '">
+ 	<INPUT TYPE="button" NAME="nine"  VALUE=" 9 " OnClick="Calc.Input.value += ' 9 '">
+ 	<Input class="numbers" type="button" name="clear" value="C" onclick="Calc.Input.value=''">
+</TD>
+</TR>
+
+<TR>
+<TD>
+ 	<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+ 	<INPUT TYPE="button" NAME="sub"  VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+ 	<INPUT TYPE="button" NAME="multiply"  VALUE="  *  " OnClick="Calc.Input.value += ' * '">
+ 	<INPUT TYPE="button" NAME="divide"  VALUE="  +  " OnClick="Calc.Input.value += ' / '">
+</TD>
+</TR>
+
+</TABLE>
+</FORM>
+</div>
+
+<script>
+var audio = new Audio("Super Mario Bros Official Theme Song.mp3" ) ;
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+
+</script>
+
+<input type="image" src="mariopixel.png" onclick="audio.play()">
+		<audio>
+ 			<source src="Super Mario Bros Offical Theme Song.mp3" type="audio/mpeg">
+		</audio>
+
+</body>
+</html>
